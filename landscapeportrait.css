@@ -1,0 +1,32 @@
+.fiverows {
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(6, 200px);
+  grid-auto-flow: dense;
+  overflow: auto;
+}
+
+.fiverows > div {
+  width: 200px;
+  height: 200px;
+}
+
+.content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  height: auto;
+  width: auto;
+  border: 2px solid lime;
+}
+
+.fiverows > div > img {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  object-fit: cover;
+}
+
+#order-four {
+  order: 1;
+}
